@@ -6,7 +6,6 @@
   ],
   "license": "MIT",
   "scripts": {
-    "build": "tailwindcss -i ./src/styles.css -o ./dist/index.css",
     "lint": "eslint src/**/* --ext .ts,.tsx --quiet",
     "dev": "tailwindcss -i ./src/styles.css -o ./dist/index.css --watch",
     "type-check": "tsc --noEmit"
