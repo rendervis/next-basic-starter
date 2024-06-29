@@ -64,7 +64,7 @@ export function DesktopNavigation({
                       }
                     }}
                   >
-                    <PopoverButton as={DesktopNavItem} href={page.href}>
+                    <PopoverButton as={DesktopNavItem} {...page}>
                       {page.name}
                     </PopoverButton>
                   </div>
@@ -109,12 +109,12 @@ export function DesktopNavigation({
                                     role='list'
                                     aria-labelledby={`desktop-category-heading-${categoryIdx}`}
                                     className={cx(
-                                      '-mt-2 flex flex-col px-4 last:pb-6'
-                                      // {
-                                      //   hidden:
-                                      //     Boolean(!category?.children) ||
-                                      //     category.children?.length === 0,
-                                      // }
+                                      '-mt-2 flex flex-col px-4 last:pb-6',
+                                      {
+                                        hidden:
+                                          Boolean(!category?.children) ||
+                                          category.children?.length === 0,
+                                      }
                                     )}
                                   >
                                     {category.children?.map((item) => (
