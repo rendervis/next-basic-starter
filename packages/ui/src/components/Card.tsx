@@ -22,7 +22,7 @@ export function Card({
           -&gt;
         </span>
       </h2>
-      <p className='m-0 max-w-[30ch] text-sm opacity-50'>{children}</p>
+      <p className='text-gray-400 m-0 max-w-[30ch] text-sm'>{children}</p>
     </a>
   )
 }
